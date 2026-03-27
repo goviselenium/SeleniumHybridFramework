@@ -1,0 +1,22 @@
+# Maven
+target/
+*.class
+
+# Reports (generated at runtime)
+reports/
+
+# IDE
+.idea/
+*.iml
+.eclipse/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets - NEVER commit these
+# Use Azure DevOps Library Variable Groups instead
+# config.properties is committed with placeholder values only

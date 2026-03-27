@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Hybrid Framework Suite" verbose="1" parallel="methods" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.framework.listeners.TestNGListener"/>
+    </listeners>
+
+    <!-- ============================================================ -->
+    <!-- Smoke Tests                                                   -->
+    <!-- ============================================================ -->
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.framework.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- ============================================================ -->
+    <!-- Regression Tests                                             -->
+    <!-- ============================================================ -->
+    <test name="Regression Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.framework.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- ============================================================ -->
+    <!-- BDD Cucumber Tests                                           -->
+    <!-- ============================================================ -->
+    <test name="BDD Cucumber Tests">
+        <classes>
+            <class name="com.framework.tests.CucumberRunner"/>
+        </classes>
+    </test>
+
+</suite>
