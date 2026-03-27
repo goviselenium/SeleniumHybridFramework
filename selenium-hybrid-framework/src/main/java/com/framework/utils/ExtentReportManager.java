@@ -54,7 +54,7 @@ public class ExtentReportManager {
 
         extent = new ExtentReports();
         extent.attachReporter(spark);
-        extent.setSystemInfo("Framework", "Selenium Hybrid (TestNG + Cucumber)");
+        extent.setSystemInfo("Framework", "Selenium Hybrid (TestNG)");
         extent.setSystemInfo("Browser",   config.getBrowser());
         extent.setSystemInfo("OS",        System.getProperty("os.name"));
         extent.setSystemInfo("Java",      System.getProperty("java.version"));

@@ -35,13 +35,4 @@
         </classes>
     </test>
 
-    <!-- ============================================================ -->
-    <!-- BDD Cucumber Tests                                           -->
-    <!-- ============================================================ -->
-    <test name="BDD Cucumber Tests">
-        <classes>
-            <class name="com.framework.tests.CucumberRunner"/>
-        </classes>
-    </test>
-
 </suite>
