@@ -91,6 +91,9 @@ public class ConfigManager {
     public String getScreenshotPath()   { return get("screenshot.path", "reports/screenshots/"); }
     public String getReportPath()       { return get("report.path", "reports/ExtentReport.html"); }
 
+    // Active environment
+    public String getEnv()              { return get("env", "qa").toLowerCase().trim(); }
+
     // Azure DevOps
     public String getAzureOrgUrl()      { return get("azure.org.url"); }
     public String getAzureProject()     { return get("azure.project.name"); }
